@@ -14,6 +14,9 @@
 		24C638DC2916E61B0031182F /* CountDownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C638DB2916E61B0031182F /* CountDownTests.swift */; };
 		24C638E62916E61B0031182F /* CountDownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C638E52916E61B0031182F /* CountDownUITests.swift */; };
 		24C638E82916E61B0031182F /* CountDownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C638E72916E61B0031182F /* CountDownUITestsLaunchTests.swift */; };
+		24C638F62916E6580031182F /* TargetDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C638F52916E6580031182F /* TargetDate.swift */; };
+		24C638F82916E8180031182F /* TargetDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C638F72916E8180031182F /* TargetDateView.swift */; };
+		24C638FA2916FCC10031182F /* AddNewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C638F92916FCC10031182F /* AddNewItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		24C638E12916E61B0031182F /* CountDownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountDownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C638E52916E61B0031182F /* CountDownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownUITests.swift; sourceTree = "<group>"; };
 		24C638E72916E61B0031182F /* CountDownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24C638F52916E6580031182F /* TargetDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetDate.swift; sourceTree = "<group>"; };
+		24C638F72916E8180031182F /* TargetDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetDateView.swift; sourceTree = "<group>"; };
+		24C638F92916FCC10031182F /* AddNewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,13 @@
 		24C638C92916E61A0031182F /* CountDown */ = {
 			isa = PBXGroup;
 			children = (
+				24C638F42916E6470031182F /* Classes */,
 				24C638CA2916E61A0031182F /* CountDownApp.swift */,
 				24C638CC2916E61A0031182F /* ContentView.swift */,
 				24C638CE2916E61B0031182F /* Assets.xcassets */,
 				24C638D02916E61B0031182F /* Preview Content */,
+				24C638F72916E8180031182F /* TargetDateView.swift */,
+				24C638F92916FCC10031182F /* AddNewItem.swift */,
 			);
 			path = CountDown;
 			sourceTree = "<group>";
@@ -125,6 +134,14 @@
 				24C638E72916E61B0031182F /* CountDownUITestsLaunchTests.swift */,
 			);
 			path = CountDownUITests;
+			sourceTree = "<group>";
+		};
+		24C638F42916E6470031182F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24C638F52916E6580031182F /* TargetDate.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C638FA2916FCC10031182F /* AddNewItem.swift in Sources */,
 				24C638CD2916E61A0031182F /* ContentView.swift in Sources */,
 				24C638CB2916E61A0031182F /* CountDownApp.swift in Sources */,
+				24C638F62916E6580031182F /* TargetDate.swift in Sources */,
+				24C638F82916E8180031182F /* TargetDateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +440,7 @@
 				DEVELOPMENT_TEAM = 6T98LR668F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CountDown;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +470,7 @@
 				DEVELOPMENT_TEAM = 6T98LR668F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CountDown;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
