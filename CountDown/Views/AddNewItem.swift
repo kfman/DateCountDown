@@ -13,6 +13,10 @@ struct AddNewItem: View {
     @State var title: String = ""
     @State var date: Date = Date()
     
+    func removeTimeComponent(_ date: Date)->Date{
+        return date.setTime(hour: 0, min: 0, sec: 0) ?? date
+    }
+    
     let callback: (TargetDate?)->Void
     
     init(_ callback: @escaping (TargetDate?)->Void) {
@@ -25,11 +29,13 @@ struct AddNewItem: View {
                 // DatePicker,
                 TextField(text: $title){Text("Title")}
                 DatePicker("Zieldatum", selection: $date, displayedComponents: .date)
-               
+                
             }
             Button("Speichern"){
                 presentationMode.wrappedValue.dismiss()
-                let result = TargetDate(date: date, title: title)
+                
+                let correctedDate = removeTimeComponent(date)
+                let result = TargetDate(date: correctedDate, title: title)
                 callback(result)
             }
         }

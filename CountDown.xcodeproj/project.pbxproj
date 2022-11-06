@@ -100,13 +100,12 @@
 		24C638C92916E61A0031182F /* CountDown */ = {
 			isa = PBXGroup;
 			children = (
+				24C638FB29179E010031182F /* Views */,
 				24C638F42916E6470031182F /* Classes */,
 				24C638CA2916E61A0031182F /* CountDownApp.swift */,
 				24C638CC2916E61A0031182F /* ContentView.swift */,
 				24C638CE2916E61B0031182F /* Assets.xcassets */,
 				24C638D02916E61B0031182F /* Preview Content */,
-				24C638F72916E8180031182F /* TargetDateView.swift */,
-				24C638F92916FCC10031182F /* AddNewItem.swift */,
 			);
 			path = CountDown;
 			sourceTree = "<group>";
@@ -142,6 +141,15 @@
 				24C638F52916E6580031182F /* TargetDate.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		24C638FB29179E010031182F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24C638F72916E8180031182F /* TargetDateView.swift */,
+				24C638F92916FCC10031182F /* AddNewItem.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -18,18 +18,13 @@ struct TargetDateView: View {
             return dateFormatter.string(from: date)
     }
     
-    func getDaysBetweenToday() -> Int{
-        let result = targetDate.date.timeIntervalSinceNow
-        return Int(ceil(result / (3600 * 24)))
-    }
-
     var body: some View {
         HStack{
             Text(formatStringDate(date: targetDate.date))
                 .padding(.trailing, 6)
             Text(targetDate.title)
             Spacer()
-            Text("\(self.getDaysBetweenToday()) Tage")
+            Text("\(targetDate.date.getDaysBetweenToday()) Tage")
         }.padding(.horizontal, 10)
     }
 }
